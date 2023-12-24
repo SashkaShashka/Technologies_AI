@@ -1,0 +1,10 @@
+version: '1.0'
+name: pythotch_server
+
+services:
+  pythotch:
+    restart: unless-stopped
+    image: lab2:0.0.1
+    volumes:
+      - C:\Users\sasha\Desktop\Tech AI\lab2\task2\data:/usr/app/src
+    command: python3 /usr/app/src/imageprocess_2.py
